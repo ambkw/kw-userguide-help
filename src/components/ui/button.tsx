@@ -18,6 +18,9 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        kiween: "bg-kiween-green text-white hover:bg-kiween-green/90 shadow-lg",
+        "kiween-orange": "bg-kiween-orange text-white hover:bg-kiween-orange/90 shadow-lg",
+        "kiween-outline": "border-2 border-kiween-green text-kiween-green bg-white hover:bg-kiween-light-green",
       },
       size: {
         default: "h-10 px-4 py-2",

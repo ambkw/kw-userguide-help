@@ -61,7 +61,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				kiween: {
+					green: 'hsl(var(--kiween-green))',
+					orange: 'hsl(var(--kiween-orange))',
+					'light-green': 'hsl(var(--kiween-light-green))',
+					text: 'hsl(var(--kiween-text))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-subtle': 'var(--gradient-subtle)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
