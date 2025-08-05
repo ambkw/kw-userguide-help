@@ -7,6 +7,7 @@ import { Layout } from "@/components/Layout";
 import Home from "./pages/Home";
 import Demarrer from "./pages/Demarrer";
 import GuideExample from "./pages/GuideExample";
+import Clients from "./pages/Clients";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
             <Route path="/" element={<Home />} />
             <Route path="/demarrer" element={<Demarrer />} />
             <Route path="/guide/statistiques" element={<GuideExample />} />
+            <Route path="/guide/clients" element={<Clients />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
