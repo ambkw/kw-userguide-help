@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Demarrer from "./pages/Demarrer";
 import GuideExample from "./pages/GuideExample";
 import Clients from "./pages/Clients";
+import ImportEnMasse from "./pages/ImportEnMasse";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
             <Route path="/demarrer" element={<Demarrer />} />
             <Route path="/guide/statistiques" element={<GuideExample />} />
             <Route path="/guide/clients" element={<Clients />} />
+            <Route path="/guide/clients/import-en-masse" element={<ImportEnMasse />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
