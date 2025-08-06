@@ -6,50 +6,50 @@ import { FileText, Settings, Eye, MessageSquare, Users, Puzzle, Gift, MapPin, Ba
 
 const features = [
   // Prévisualisation
-  { title: "Apparence", url: "/guide/apparence", icon: Eye, category: "Prévisualisation" },
-  { title: "Paramètres de page", url: "/guide/parametres-page", icon: Settings, category: "Prévisualisation" },
-  { title: "Aperçu site web", url: "/guide/apercu-site", icon: ExternalLink, category: "Prévisualisation" },
-  { title: "Site Association", url: "/guide/site-association", icon: Building, category: "Prévisualisation" },
-  { title: "Page Kiween", url: "/guide/page-kiween", icon: FileText, category: "Prévisualisation" },
-  { title: "Aide & Contact", url: "/guide/aide-contact", icon: MessageSquare, category: "Prévisualisation" },
+  { title: "Apparence", url: "/guide/apparence", icon: Eye, category: "Prévisualisation", keywords: ["design", "style", "thème", "couleur", "visuel", "esthétique"] },
+  { title: "Paramètres de page", url: "/guide/parametres-page", icon: Settings, category: "Prévisualisation", keywords: ["configuration", "réglages", "options", "structure", "layout"] },
+  { title: "Aperçu site web", url: "/guide/apercu-site", icon: ExternalLink, category: "Prévisualisation", keywords: ["prévisualisation", "preview", "visualisation", "rendu", "test"] },
+  { title: "Site Association", url: "/guide/site-association", icon: Building, category: "Prévisualisation", keywords: ["organisation", "association", "entreprise", "structure", "société"] },
+  { title: "Page Kiween", url: "/guide/page-kiween", icon: FileText, category: "Prévisualisation", keywords: ["plateforme", "interface", "dashboard", "accueil", "portail"] },
+  { title: "Aide & Contact", url: "/guide/aide-contact", icon: MessageSquare, category: "Prévisualisation", keywords: ["support", "assistance", "help", "formulaire", "communication"] },
   
   // Gestion de contenu
-  { title: "Informations", url: "/guide/informations", icon: FileText, category: "Gestion de contenu" },
-  { title: "Photos", url: "/guide/photos", icon: FileText, category: "Gestion de contenu" },
-  { title: "Visite virtuelle 360° et vidéo", url: "/guide/visite-virtuelle", icon: FileText, category: "Gestion de contenu" },
-  { title: "Sites partenaires", url: "/guide/sites-partenaires", icon: Users, category: "Gestion de contenu" },
-  { title: "Modules externes", url: "/guide/modules-externes", icon: Puzzle, category: "Gestion de contenu" },
-  { title: "Widget Kiween", url: "/guide/widget-kiween", icon: Gift, category: "Gestion de contenu" },
-  { title: "Nouveau site", url: "/guide/nouveau-site", icon: MapPin, category: "Gestion de contenu" },
+  { title: "Informations", url: "/guide/informations", icon: FileText, category: "Gestion de contenu", keywords: ["données", "details", "description", "renseignements", "profil"] },
+  { title: "Photos", url: "/guide/photos", icon: FileText, category: "Gestion de contenu", keywords: ["images", "galerie", "visuels", "médias", "upload"] },
+  { title: "Visite virtuelle 360° et vidéo", url: "/guide/visite-virtuelle", icon: FileText, category: "Gestion de contenu", keywords: ["360", "immersif", "panorama", "vidéo", "virtuel", "3D"] },
+  { title: "Sites partenaires", url: "/guide/sites-partenaires", icon: Users, category: "Gestion de contenu", keywords: ["partenariat", "collaboration", "réseau", "affiliés", "liens"] },
+  { title: "Modules externes", url: "/guide/modules-externes", icon: Puzzle, category: "Gestion de contenu", keywords: ["plugins", "extensions", "widgets", "intégrations", "add-ons"] },
+  { title: "Widget Kiween", url: "/guide/widget-kiween", icon: Gift, category: "Gestion de contenu", keywords: ["composant", "élément", "bloc", "module", "outil"] },
+  { title: "Nouveau site", url: "/guide/nouveau-site", icon: MapPin, category: "Gestion de contenu", keywords: ["création", "nouveau", "ajouter", "établissement", "location"] },
   
   // Communication marketing
-  { title: "Plan d'actualités", url: "/guide/plan-actualites", icon: Calendar, category: "Communication marketing" },
-  { title: "Actualités", url: "/guide/actualites", icon: FileText, category: "Communication marketing" },
-  { title: "Promotions", url: "/guide/promotions", icon: Star, category: "Communication marketing" },
-  { title: "Événements", url: "/guide/evenements", icon: Calendar, category: "Communication marketing" },
-  { title: "Paramètres d'envoi", url: "/guide/parametres-envoi", icon: Settings, category: "Communication marketing" },
-  { title: "Réseaux sociaux", url: "/guide/reseaux-sociaux", icon: Users, category: "Communication marketing" },
-  { title: "QR Codes", url: "/guide/qr-codes", icon: FileText, category: "Communication marketing" },
-  { title: "Clients", url: "/guide/clients", icon: Users, category: "Communication marketing" },
-  { title: "Messages reçus", url: "/guide/messages-recus", icon: MessageSquare, category: "Communication marketing" },
+  { title: "Plan d'actualités", url: "/guide/plan-actualites", icon: Calendar, category: "Communication marketing", keywords: ["calendrier", "planning", "programme", "agenda", "éditoriel"] },
+  { title: "Actualités", url: "/guide/actualites", icon: FileText, category: "Communication marketing", keywords: ["news", "articles", "blog", "publications", "contenu"] },
+  { title: "Promotions", url: "/guide/promotions", icon: Star, category: "Communication marketing", keywords: ["offres", "réductions", "remises", "deals", "marketing"] },
+  { title: "Événements", url: "/guide/evenements", icon: Calendar, category: "Communication marketing", keywords: ["events", "manifestations", "animations", "activités", "agenda"] },
+  { title: "Paramètres d'envoi", url: "/guide/parametres-envoi", icon: Settings, category: "Communication marketing", keywords: ["email", "mailing", "expédition", "configuration", "smtp"] },
+  { title: "Réseaux sociaux", url: "/guide/reseaux-sociaux", icon: Users, category: "Communication marketing", keywords: ["facebook", "instagram", "twitter", "linkedin", "social media"] },
+  { title: "QR Codes", url: "/guide/qr-codes", icon: FileText, category: "Communication marketing", keywords: ["qrcode", "scan", "mobile", "lien", "code"] },
+  { title: "Clients", url: "/guide/clients", icon: Users, category: "Communication marketing", keywords: ["clientèle", "contacts", "base", "prospects", "CRM"] },
+  { title: "Messages reçus", url: "/guide/messages-recus", icon: MessageSquare, category: "Communication marketing", keywords: ["courrier", "inbox", "réception", "contact", "formulaire"] },
   
   // Catalogue
-  { title: "Commandes", url: "/guide/commandes", icon: ShoppingCart, category: "Catalogue" },
-  { title: "Paramètres des commandes", url: "/guide/parametres-commandes", icon: Settings, category: "Catalogue" },
-  { title: "Configuration des transporteurs", url: "/guide/configuration-transporteurs", icon: Truck, category: "Catalogue" },
-  { title: "Produits", url: "/guide/produits", icon: Package, category: "Catalogue" },
-  { title: "Catégories de produit", url: "/guide/categories-produit", icon: Database, category: "Catalogue" },
-  { title: "Paramètres produit", url: "/guide/parametres-produit", icon: Settings, category: "Catalogue" },
-  { title: "Codes promo", url: "/guide/codes-promo", icon: Star, category: "Catalogue" },
-  { title: "Mes collections", url: "/guide/mes-collections", icon: Gift, category: "Catalogue" },
-  { title: "Documents", url: "/guide/documents", icon: FileText, category: "Catalogue" },
+  { title: "Commandes", url: "/guide/commandes", icon: ShoppingCart, category: "Catalogue", keywords: ["orders", "achats", "ventes", "transactions", "e-commerce"] },
+  { title: "Paramètres des commandes", url: "/guide/parametres-commandes", icon: Settings, category: "Catalogue", keywords: ["configuration", "options", "réglages", "gestion", "workflow"] },
+  { title: "Configuration des transporteurs", url: "/guide/configuration-transporteurs", icon: Truck, category: "Catalogue", keywords: ["livraison", "expédition", "transport", "colissimo", "chronopost"] },
+  { title: "Produits", url: "/guide/produits", icon: Package, category: "Catalogue", keywords: ["articles", "items", "marchandises", "inventory", "stock"] },
+  { title: "Catégories de produit", url: "/guide/categories-produit", icon: Database, category: "Catalogue", keywords: ["classification", "rubriques", "sections", "taxonomie", "organisation"] },
+  { title: "Paramètres produit", url: "/guide/parametres-produit", icon: Settings, category: "Catalogue", keywords: ["configuration", "options", "attributs", "variables", "caractéristiques"] },
+  { title: "Codes promo", url: "/guide/codes-promo", icon: Star, category: "Catalogue", keywords: ["coupons", "réductions", "remises", "promotions", "discount"] },
+  { title: "Mes collections", url: "/guide/mes-collections", icon: Gift, category: "Catalogue", keywords: ["séries", "gammes", "ensembles", "groupes", "sélections"] },
+  { title: "Documents", url: "/guide/documents", icon: FileText, category: "Catalogue", keywords: ["fichiers", "PDF", "téléchargements", "documentation", "ressources"] },
   
   // Mes données
-  { title: "Statistiques", url: "/guide/statistiques", icon: BarChart3, category: "Mes données" },
-  { title: "Avis", url: "/guide/avis", icon: ThumbsUp, category: "Mes données" },
-  { title: "Abonnement", url: "/guide/abonnement", icon: CreditCard, category: "Mes données" },
-  { title: "Contrat", url: "/guide/contrat", icon: FileText, category: "Mes données" },
-  { title: "Factures", url: "/guide/factures", icon: FileText, category: "Mes données" },
+  { title: "Statistiques", url: "/guide/statistiques", icon: BarChart3, category: "Mes données", keywords: ["analytics", "métriques", "données", "rapports", "performance"] },
+  { title: "Avis", url: "/guide/avis", icon: ThumbsUp, category: "Mes données", keywords: ["reviews", "commentaires", "feedback", "évaluations", "notes"] },
+  { title: "Abonnement", url: "/guide/abonnement", icon: CreditCard, category: "Mes données", keywords: ["subscription", "plan", "forfait", "paiement", "billing"] },
+  { title: "Contrat", url: "/guide/contrat", icon: FileText, category: "Mes données", keywords: ["accord", "conditions", "termes", "légal", "engagement"] },
+  { title: "Factures", url: "/guide/factures", icon: FileText, category: "Mes données", keywords: ["invoices", "facturation", "paiements", "comptabilité", "finances"] },
 ];
 
 export default function Demarrer() {
@@ -65,7 +65,8 @@ export default function Demarrer() {
 
   const filteredFeatures = features.filter(feature =>
     feature.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    feature.category.toLowerCase().includes(searchTerm.toLowerCase())
+    feature.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    feature.keywords.some(keyword => keyword.toLowerCase().includes(searchTerm.toLowerCase()))
   );
 
   const getCategoryColor = (category: string) => {
