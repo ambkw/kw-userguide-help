@@ -47,6 +47,7 @@ All colors MUST be HSL.
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--kiween-light-green)));
     --gradient-card: linear-gradient(135deg, hsl(var(--card)), hsl(var(--muted)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--kiween-green) / 0.05), hsl(var(--kiween-orange) / 0.05));
+    --gradient-button: linear-gradient(to bottom, #31cd44 0%, #13bb0a 50%, #18c918 51%, #14a349 100%);
     
     /* Shadows */
     --shadow-elegant: 0 10px 30px -10px hsl(var(--kiween-green) / 0.15);
