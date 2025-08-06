@@ -1,4 +1,7 @@
+import { useState } from "react";
 import { FeatureCard } from "@/components/FeatureCard";
+import { Input } from "@/components/ui/input";
+import { Search } from "lucide-react";
 import { FileText, Settings, Eye, MessageSquare, Users, Puzzle, Gift, MapPin, BarChart3, ThumbsUp, Calendar, Star, ShoppingCart, Clock, Truck, Package, Database, CreditCard, Building, ExternalLink } from "lucide-react";
 
 const features = [
@@ -50,6 +53,8 @@ const features = [
 ];
 
 export default function Demarrer() {
+  const [searchTerm, setSearchTerm] = useState("");
+  
   const categories = [
     "Prévisualisation",
     "Gestion de contenu", 
@@ -57,6 +62,11 @@ export default function Demarrer() {
     "Catalogue",
     "Mes données"
   ];
+
+  const filteredFeatures = features.filter(feature =>
+    feature.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    feature.category.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   const getCategoryColor = (category: string) => {
     switch (category) {
@@ -82,15 +92,33 @@ export default function Demarrer() {
             </p>
           </div>
 
-          {categories.map((category) => (
-            <div key={category} className={`mb-12 p-6 rounded-xl border-2 ${getCategoryColor(category)}`}>
-              <h2 className="text-2xl font-bold text-kiween-text mb-6 text-center">
-                {category}
-              </h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
-                {features
-                  .filter((feature) => feature.category === category)
-                  .map((feature) => (
+          {/* Barre de recherche */}
+          <div className="mb-8">
+            <div className="max-w-md mx-auto relative">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+              <Input
+                type="text"
+                placeholder="Rechercher un guide..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="pl-10"
+              />
+            </div>
+          </div>
+
+          {categories.map((category) => {
+            const categoryFeatures = filteredFeatures.filter((feature) => feature.category === category);
+            
+            // Ne pas afficher la catégorie si aucune fonctionnalité ne correspond à la recherche
+            if (categoryFeatures.length === 0) return null;
+            
+            return (
+              <div key={category} className={`mb-12 p-6 rounded-xl border-2 ${getCategoryColor(category)}`}>
+                <h2 className="text-2xl font-bold text-kiween-text mb-6 text-center">
+                  {category}
+                </h2>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+                  {categoryFeatures.map((feature) => (
                     <FeatureCard
                       key={feature.url}
                       title={feature.title}
@@ -98,9 +126,10 @@ export default function Demarrer() {
                       icon={feature.icon}
                     />
                   ))}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
