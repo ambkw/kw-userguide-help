@@ -45,6 +45,13 @@ All colors MUST be HSL.
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--kiween-green)), hsl(var(--kiween-orange)));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--kiween-light-green)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--card)), hsl(var(--muted)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--kiween-green) / 0.05), hsl(var(--kiween-orange) / 0.05));
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--kiween-green) / 0.15);
+    --shadow-card: 0 4px 20px -4px hsl(var(--border) / 0.5);
+    --shadow-hover: 0 8px 30px -8px hsl(var(--kiween-green) / 0.25);
 
     --radius: 0.5rem;
 

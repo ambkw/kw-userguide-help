@@ -71,39 +71,60 @@ export default function Demarrer() {
 
   const getCategoryColor = (category: string) => {
     switch (category) {
-      case "Prévisualisation": return "bg-yellow-50 border-yellow-200";
-      case "Gestion de contenu": return "bg-green-50 border-green-200";
-      case "Communication marketing": return "bg-orange-50 border-orange-200";
-      case "Catalogue": return "bg-purple-50 border-purple-200";
-      case "Mes données": return "bg-red-50 border-red-200";
-      default: return "bg-gray-50 border-gray-200";
+      case "Prévisualisation": return "bg-gradient-to-br from-yellow-50 to-amber-50 border-yellow-200/60";
+      case "Gestion de contenu": return "bg-gradient-to-br from-emerald-50 to-green-50 border-emerald-200/60";
+      case "Communication marketing": return "bg-gradient-to-br from-orange-50 to-red-50 border-orange-200/60";
+      case "Catalogue": return "bg-gradient-to-br from-purple-50 to-violet-50 border-purple-200/60";
+      case "Mes données": return "bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200/60";
+      default: return "bg-gradient-to-br from-muted to-muted/50 border-border/60";
+    }
+  };
+
+  const getCategoryIcon = (category: string) => {
+    switch (category) {
+      case "Prévisualisation": return Eye;
+      case "Gestion de contenu": return FileText;
+      case "Communication marketing": return MessageSquare;
+      case "Catalogue": return Package;
+      case "Mes données": return BarChart3;
+      default: return FileText;
     }
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-12">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-kiween-text mb-4">
-              Guides d'utilisation Kiween
+    <div className="min-h-screen bg-gradient-subtle">
+      <div className="container mx-auto px-4 py-16">
+        <div className="max-w-7xl mx-auto">
+          {/* Hero Section */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-gradient-primary shadow-elegant mb-6">
+              <FileText className="h-10 w-10 text-white" />
+            </div>
+            <h1 className="text-5xl font-bold text-foreground mb-6 leading-tight">
+              Guides d'utilisation <span className="bg-gradient-primary bg-clip-text text-transparent">Kiween</span>
             </h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Explorez toutes les fonctionnalités de Kiween. Cliquez sur une icône pour accéder au guide correspondant.
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Explorez toutes les fonctionnalités de Kiween avec nos guides détaillés. 
+              Trouvez rapidement ce que vous cherchez grâce à notre recherche intelligente.
             </p>
           </div>
 
           {/* Barre de recherche */}
-          <div className="mb-8">
-            <div className="max-w-md mx-auto relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
-              <Input
-                type="text"
-                placeholder="Rechercher un guide..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10"
-              />
+          <div className="mb-16">
+            <div className="max-w-xl mx-auto relative">
+              <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur opacity-20"></div>
+              <div className="relative bg-card rounded-2xl border border-border/50 shadow-card p-1">
+                <div className="relative">
+                  <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground h-5 w-5" />
+                  <Input
+                    type="text"
+                    placeholder="Rechercher un guide ou une fonctionnalité..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    className="pl-12 pr-4 py-4 bg-transparent border-0 text-lg placeholder:text-muted-foreground focus-visible:ring-0 focus-visible:ring-offset-0"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
@@ -113,12 +134,21 @@ export default function Demarrer() {
             // Ne pas afficher la catégorie si aucune fonctionnalité ne correspond à la recherche
             if (categoryFeatures.length === 0) return null;
             
+            const CategoryIcon = getCategoryIcon(category);
+            
             return (
-              <div key={category} className={`mb-12 p-6 rounded-xl border-2 ${getCategoryColor(category)}`}>
-                <h2 className="text-2xl font-bold text-kiween-text mb-6 text-center">
-                  {category}
-                </h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+              <div key={category} className={`mb-16 p-8 rounded-3xl border-2 backdrop-blur-sm ${getCategoryColor(category)}`}>
+                <div className="flex items-center justify-center mb-8">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 rounded-2xl bg-gradient-primary flex items-center justify-center shadow-elegant">
+                      <CategoryIcon className="h-6 w-6 text-white" />
+                    </div>
+                    <h2 className="text-3xl font-bold text-foreground">
+                      {category}
+                    </h2>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6">
                   {categoryFeatures.map((feature) => (
                     <FeatureCard
                       key={feature.url}
