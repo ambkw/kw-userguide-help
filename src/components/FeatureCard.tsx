@@ -16,7 +16,7 @@ export function FeatureCard({ title, url, icon: Icon, category }: FeatureCardPro
     >
       <div className="absolute inset-0 bg-gradient-hero opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       <div className="relative p-6 flex flex-col items-center text-center space-y-4">
-        <div className="w-16 h-16 rounded-2xl bg-gradient-primary flex items-center justify-center shadow-elegant group-hover:scale-110 transition-transform duration-300">
+        <div className="w-16 h-16 rounded-2xl bg-gradient-button flex items-center justify-center shadow-elegant group-hover:scale-110 transition-transform duration-300">
           <Icon className="h-8 w-8 text-white" />
         </div>
         <h3 className="font-semibold text-foreground text-sm leading-tight group-hover:text-kiween-green transition-colors duration-300">{title}</h3>

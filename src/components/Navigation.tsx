@@ -76,7 +76,7 @@ export function Navigation() {
     <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
       <div className="container mx-auto px-4 h-14 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
+          <div className="w-8 h-8 bg-gradient-button rounded-lg flex items-center justify-center">
             <FileText className="h-5 w-5 text-white" />
           </div>
           <span className="font-bold text-xl text-kiween-text">Kiween Docs</span>
