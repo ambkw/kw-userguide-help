@@ -95,6 +95,26 @@ export default function PublierUneVideo() {
             <strong>Voir aussi :</strong> <span className="text-orange-600">démonstration pour préparer sa vidéo avant diffusion</span> 📹
           </p>
         </section>
+
+        {/* Carrousel d'images */}
+        <section>
+          <h2 className="text-2xl font-semibold text-kiween-text mb-4">
+            Images du guide
+          </h2>
+          <div className="relative">
+            <div className="flex overflow-x-auto space-x-4 pb-4 scrollbar-hide">
+              {[1, 2, 3, 4, 5, 6].map((index) => (
+                <div key={index} className="flex-shrink-0">
+                  <img
+                    src={`/kb/actualites/publier-une-video/publier-une-video-0${index}.png`}
+                    alt={`Guide étape ${index}`}
+                    className="w-80 h-auto rounded-lg shadow-lg border border-gray-200"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
 
       {/* Navigation */}
