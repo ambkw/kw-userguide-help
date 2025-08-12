@@ -12,6 +12,7 @@ import ImportEnMasse from "./pages/ImportEnMasse";
 import GuideActualites from "./pages/GuideActualites";
 import PublierUneVideo from "./pages/PublierUneVideo";
 import GuideProduits from "./pages/GuideProduits";
+import GererSesCodes from "./pages/GererSesCodes";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/guide/actualites" element={<GuideActualites />} />
             <Route path="/guide/actualites/publier-une-video" element={<PublierUneVideo />} />
             <Route path="/guide/produits" element={<GuideProduits />} />
+            <Route path="/guide/produits/gerer-ses-codes-promo" element={<GererSesCodes />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
