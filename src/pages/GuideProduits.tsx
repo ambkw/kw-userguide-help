@@ -33,9 +33,9 @@ export default function GuideProduits() {
       url: "/guide/produits/creer-fiche-abonnement"
     },
     {
-      id: "gerer-codes-promo",
+      id: "gerer-ses-codes-promo",
       title: "Gérer ses codes promo",
-      url: "/guide/produits/gerer-codes-promo"
+      url: "/guide/produits/gerer-ses-codes-promo"
     },
     {
       id: "gestion-transporteurs",
