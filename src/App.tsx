@@ -13,6 +13,12 @@ import GuideActualites from "./pages/GuideActualites";
 import PublierUneVideo from "./pages/PublierUneVideo";
 import GuideProduits from "./pages/GuideProduits";
 import GererSesCodes from "./pages/GererSesCodes";
+import ChangerAffichageCatalogue from "./pages/ChangerAffichageCatalogue";
+import CreerFicheAbonnement from "./pages/CreerFicheAbonnement";
+import GererPlusieursPrix from "./pages/GererPlusieursPrix";
+import GestionStock from "./pages/GestionStock";
+import GestionTransporteurs from "./pages/GestionTransporteurs";
+import ImporterFichesProduits from "./pages/ImporterFichesProduits";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +40,12 @@ const App = () => (
             <Route path="/guide/actualites/publier-une-video" element={<PublierUneVideo />} />
             <Route path="/guide/produits" element={<GuideProduits />} />
             <Route path="/guide/produits/gerer-ses-codes-promo" element={<GererSesCodes />} />
+            <Route path="/guide/produits/changer-affichage-catalogue" element={<ChangerAffichageCatalogue />} />
+            <Route path="/guide/produits/creer-fiche-abonnement" element={<CreerFicheAbonnement />} />
+            <Route path="/guide/produits/gerer-plusieurs-prix" element={<GererPlusieursPrix />} />
+            <Route path="/guide/produits/gestion-stock" element={<GestionStock />} />
+            <Route path="/guide/produits/gestion-transporteurs" element={<GestionTransporteurs />} />
+            <Route path="/guide/produits/importer-fiches-produits" element={<ImporterFichesProduits />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
