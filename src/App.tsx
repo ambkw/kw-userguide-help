@@ -6,19 +6,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import Home from "./pages/Home";
 import Demarrer from "./pages/Demarrer";
-import GuideExample from "./pages/GuideExample";
-import Clients from "./pages/Clients";
-import ImportEnMasse from "./pages/ImportEnMasse";
+import GuideStatistiques from "./pages/GuideStatistiques";
+import VoirStats from "./pages/statistiques/VoirStats";
+import Clients from "./pages/GuideClients";
+import ImportEnMasse from "./pages/clients/ImportEnMasse";
 import GuideActualites from "./pages/GuideActualites";
-import PublierUneVideo from "./pages/PublierUneVideo";
+import PublierUneVideo from "./pages/actualites/PublierUneVideo";
 import GuideProduits from "./pages/GuideProduits";
-import GererSesCodes from "./pages/GererSesCodes";
-import ChangerAffichageCatalogue from "./pages/ChangerAffichageCatalogue";
-import CreerFicheAbonnement from "./pages/CreerFicheAbonnement";
-import GererPlusieursPrix from "./pages/GererPlusieursPrix";
-import GestionStock from "./pages/GestionStock";
-import GestionTransporteurs from "./pages/GestionTransporteurs";
-import ImporterFichesProduits from "./pages/ImporterFichesProduits";
+import GererSesCodes from "./pages/produits/GererSesCodes";
+import ChangerAffichageCatalogue from "./pages/produits/ChangerAffichageCatalogue";
+import CreerFicheAbonnement from "./pages/produits/CreerFicheAbonnement";
+import GererPlusieursPrix from "./pages/produits/GererPlusieursPrix";
+import GestionStock from "./pages/produits/GestionStock";
+import GestionTransporteurs from "./pages/produits/GestionTransporteurs";
+import ImporterFichesProduits from "./pages/produits/ImporterFichesProduits";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,7 +34,8 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/demarrer" element={<Demarrer />} />
-            <Route path="/guide/statistiques" element={<GuideExample />} />
+            <Route path="/guide/statistiques" element={<GuideStatistiques />} />
+            <Route path="/guide/statistiques/voir-stats" element={<VoirStats />} />
             <Route path="/guide/clients" element={<Clients />} />
             <Route path="/guide/clients/import-en-masse" element={<ImportEnMasse />} />
             <Route path="/guide/actualites" element={<GuideActualites />} />
