@@ -30,24 +30,28 @@ export default function GestionStock() {
         <h1 className="text-3xl font-bold text-kiween-text mb-4">
           Gestion de stock
         </h1>
-        
+
+        <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+          <p className="text-blue-700">
+            <strong>Gérer une quantité limitée sur un produit disponible.</strong>
+          </p>
+        </div>
+
         <h2 className="text-xl text-kiween-text/80 mb-6">
           Comment gérer une quantité limitée sur un produit en vente en ligne ?
         </h2>
 
         <Alert className="mb-6">
           <AlertDescription>
-            <strong>Gérer une quantité limitée sur un produit disponible.</strong>
+            <strong>Menu :</strong> Espace pro › <strong>Produits</strong> › Afficher paramètres avancés
           </AlertDescription>
         </Alert>
       </div>
 
       <div className="prose prose-lg max-w-none text-kiween-text">
-        <div className="mb-6">
-          <p className="mb-4">
-            <strong>Menu :</strong> Espace pro › <strong>Produits</strong> › Afficher paramètres avancés
-          </p>
-        </div>
+        <h2 className="text-2xl font-semibold text-kiween-text mb-4">
+          Gérer ses stocks disponibles
+        </h2>
 
         <p className="mb-6">
           Pour activer la gestion d'une quantité limitée sur les produits, aller dans les <strong>Paramètres avancés</strong>, puis dans la section "<strong>Stock</strong>", activer

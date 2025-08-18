@@ -1,25 +1,37 @@
 import { Link } from "react-router-dom";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export default function PublierUneVideo() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <div className="mb-8">
+        <nav className="text-sm text-kiween-text/70 mb-4">
+          <Link to="/guide/actualites" className="hover:text-kiween-green">
+            Guide Actualités
+          </Link>
+          {" > "}
+          <span>Publier une vidéo</span>
+        </nav>
+
         <h1 className="text-3xl font-bold text-kiween-text mb-4">
           Publier une vidéo
         </h1>
-        <p className="text-lg text-kiween-text/80 mb-6">
-          Comment publier une vidéo sur tous ses réseaux sociaux ?
-        </p>
         
         <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
           <p className="text-blue-700">
             <strong>Diffuser une vidéo sur ses réseaux sociaux.</strong>
           </p>
         </div>
-        
-        <p className="text-kiween-text/90 mb-6">
-          <strong>Menu :</strong> Espace pro &gt; <strong>Actualités</strong>
-        </p>
+
+        <h2 className="text-xl text-kiween-text/80 mb-6">
+          Comment publier une vidéo sur tous ses réseaux sociaux ?
+        </h2>
+
+        <Alert className="mb-6">
+          <AlertDescription>
+            <strong>Menu :</strong> Espace pro &gt; <strong>Actualités</strong>
+          </AlertDescription>
+        </Alert>
       </div>
 
       <div className="space-y-8">

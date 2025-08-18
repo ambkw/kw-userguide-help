@@ -34,25 +34,29 @@ export default function GestionTransporteurs() {
         <h1 className="text-3xl font-bold text-kiween-text mb-4">
           Gestion des transporteurs
         </h1>
-        
+
+        <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+          <p className="text-blue-700">
+            <strong>Configurer ses colis de commande produit pour Chronopost/Chronofresh ou </strong>
+            <a href="#zone-livraison-personnalisee" className="text-kiween-green">ses transporteurs par zone</a>
+          </p>
+        </div>
+
         <h2 className="text-xl text-kiween-text/80 mb-6">
           Comment gérer le transport des colis pour les commandes en ligne ?
         </h2>
 
         <Alert className="mb-6">
           <AlertDescription>
-            <strong>Configurer ses colis de commande produit pour Chronopost/Chronofresh ou </strong>
-            <a href="#" className="text-kiween-green">ses transporteurs par zone</a>
+            <strong>Menu :</strong> Espace pro › <strong>Configuration des transporteurs</strong>
           </AlertDescription>
         </Alert>
       </div>
 
       <div className="prose prose-lg max-w-none text-kiween-text">
-        <div className="mb-6">
-          <p className="mb-4">
-            <strong>Menu :</strong> Espace pro › <strong>Configuration des transporteurs</strong>
-          </p>
-        </div>
+        <h2 className="text-2xl font-semibold text-kiween-text mb-4">
+          Ajouter un transporteur connecté
+        </h2>
 
         <p className="mb-6">
           Avec la boutique en ligne, il est possible de recevoir des commandes et d'en assurer la livraison.
@@ -97,6 +101,9 @@ export default function GestionTransporteurs() {
           </ul>
         </div>
 
+        <h2 className="text-2xl font-semibold text-kiween-text mb-4" id="zone-livraison-personnalisee">
+          Ajouter une zone de livraison personnalisée
+        </h2>
         <div className="space-y-4">
           <p>
             <strong>Définir des transporteurs par zone</strong> et appliquer des frais de livraison différents.

@@ -31,24 +31,28 @@ export default function GererPlusieursPrix() {
         <h1 className="text-3xl font-bold text-kiween-text mb-4">
           Gérer plusieurs prix sur une fiche produit
         </h1>
-        
+
+        <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+          <p className="text-blue-700">
+            <strong>Fiche produit et déclinaisons.</strong>
+          </p>
+        </div>
+
         <h2 className="text-xl text-kiween-text/80 mb-6">
           Comment créer des déclinaisons de produit à prix variable ?
         </h2>
 
         <Alert className="mb-6">
           <AlertDescription>
-            <strong>Fiche produit et déclinaisons.</strong>
+            <strong>Menu :</strong> Espace pro › <strong>Produits</strong> › Ajouter/modifier un produit › <strong>Ajouter une déclinaison</strong>
           </AlertDescription>
         </Alert>
       </div>
 
       <div className="prose prose-lg max-w-none text-kiween-text">
-        <div className="mb-6">
-          <p className="mb-4">
-            <strong>Menu :</strong> Espace pro › <strong>Produits</strong> › Ajouter/modifier un produit › <strong>Ajouter une déclinaison</strong>
-          </p>
-        </div>
+        <h2 className="text-2xl font-semibold text-kiween-text mb-4">
+          Créer plusieurs prix sur une seule fiche produit
+        </h2>
 
         <p className="mb-6">
           Pour ajouter une fiche produit, aller dans votre <strong>Espace pro › Produits</strong>. Dans le cas où vous avez la même description de produit disponible en

@@ -29,24 +29,28 @@ export default function ChangerAffichageCatalogue() {
         <h1 className="text-3xl font-bold text-kiween-text mb-4">
           Changer l'affichage du catalogue produits
         </h1>
-        
+
+        <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+          <p className="text-blue-700">
+            <strong>Mode d'affichage de la e-boutique et page d'accueil des produits</strong>
+          </p>
+        </div>
+
         <h2 className="text-xl text-kiween-text/80 mb-6">
           Comment changer l'affichage du catalogue produits ?
         </h2>
 
         <Alert className="mb-6">
           <AlertDescription>
-            <strong>Mode d'affichage de la e-boutique et page d'accueil des produits</strong>
+            <strong>Menu :</strong> Espace pro › <strong>Produits</strong> › bouton <strong>Afficher les paramètres avancés</strong>
           </AlertDescription>
         </Alert>
       </div>
 
       <div className="prose prose-lg max-w-none text-kiween-text">
-        <div className="mb-6">
-          <p className="mb-4">
-            <strong>Menu :</strong> Espace pro › <strong>Produits</strong> › bouton <strong>Afficher les paramètres avancés</strong>
-          </p>
-        </div>
+        <h2 className="text-2xl font-semibold text-kiween-text mb-4">
+          Gérer les différents modes d'affichage de la page des produits
+        </h2>
 
         <p className="mb-6">
           Il est possible de changer le mode d'affichage de la page des produits. Par ex. avec beaucoup de produits, on peut créer des vignettes

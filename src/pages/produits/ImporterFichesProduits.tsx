@@ -27,7 +27,13 @@ export default function ImporterFichesProduits() {
         <h1 className="text-3xl font-bold text-kiween-text mb-4">
           Importer ses fiches produits en masse
         </h1>
-        
+
+        <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+          <p className="text-blue-700">
+            <strong>Importer ses données produits à partir d'un fichier.</strong>
+          </p>
+        </div>
+
         <h2 className="text-xl text-kiween-text/80 mb-6">
           Comment importer plusieurs produits à partir d'un fichier Excel ?
         </h2>
@@ -40,6 +46,10 @@ export default function ImporterFichesProduits() {
       </div>
 
       <div className="prose prose-lg max-w-none text-kiween-text">
+        <h2 className="text-2xl font-semibold text-kiween-text mb-4">
+          Import en masse à partir d'un fichier
+        </h2>
+
         <p className="mb-6">
           Pour créer une fiche produit, il est recommandé d'utiliser l'interface qui offre une expérience plus visuelle.
         </p>

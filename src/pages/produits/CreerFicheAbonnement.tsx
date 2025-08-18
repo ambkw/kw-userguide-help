@@ -31,6 +31,12 @@ export default function CreerFicheAbonnement() {
         <h1 className="text-3xl font-bold text-kiween-text mb-4">
           Créer une fiche produit de type Abonnement
         </h1>
+
+        <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+          <p className="text-blue-700">
+            <strong>Fiche produit de type Abonnement ou un paiement récurrent.</strong>
+          </p>
+        </div>
         
         <h2 className="text-xl text-kiween-text/80 mb-6">
           Comment créer une fiche produit payable mensuellement (abonnement) ?
@@ -38,17 +44,15 @@ export default function CreerFicheAbonnement() {
 
         <Alert className="mb-6">
           <AlertDescription>
-            <strong>Fiche produit de type Abonnement.</strong>
+            <strong>Menu :</strong> Espace pro › <strong>Produits</strong> › Ajouter un produit
           </AlertDescription>
         </Alert>
       </div>
 
       <div className="prose prose-lg max-w-none text-kiween-text">
-        <div className="mb-6">
-          <p className="mb-4">
-            <strong>Menu :</strong> Espace pro › <strong>Produits</strong> › Ajouter un produit
-          </p>
-        </div>
+        <h2 className="text-2xl font-semibold text-kiween-text mb-4">
+          Créer un paiement récurrent sur un produit, service ou abonnement
+        </h2>
 
         <p className="mb-6">
           Proposer des produits ou services par abonnement se démocratise. C'est un moyen efficace pour fidéliser ses clients et leur proposer

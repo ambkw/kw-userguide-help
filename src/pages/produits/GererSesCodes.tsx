@@ -1,29 +1,45 @@
 import { Link } from "react-router-dom";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export default function GererSesCodes() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <div className="mb-8">
+        <nav className="text-sm text-kiween-text/70 mb-4">
+          <Link to="/guide/produits" className="hover:text-kiween-green">
+            Guide Produits
+          </Link>
+          {" > "}
+          <span>Gestion de stock</span>
+        </nav>
+
         <h1 className="text-3xl font-bold text-kiween-text mb-4">
           Gérer ses codes promo
         </h1>
-        <p className="text-lg text-kiween-text/80 mb-6">
-          Comment créer un code promo pour sa boutique en ligne ?
-        </p>
-        
+
         <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
           <p className="text-blue-700">
             <strong>Créer un bon de réduction pour ses clients.</strong>
           </p>
         </div>
-        
-        <p className="text-kiween-text/90 mb-6">
-          <strong>Menu :</strong> Espace pro &gt; <strong>Code promo</strong>
+
+        <p className="text-lg text-kiween-text/80 mb-6">
+          Comment créer un code promo pour sa boutique en ligne ?
         </p>
+
+        <Alert className="mb-6">
+          <AlertDescription>
+            <strong>Menu :</strong> Espace pro &gt; <strong>Code promo</strong>
+          </AlertDescription>
+        </Alert>
       </div>
 
       <div className="space-y-8">
         <section>
+          <h2 className="text-2xl font-semibold text-kiween-text mb-4">
+            Créer un code promo ou bon de réduction
+          </h2>
+
           <p className="text-kiween-text/90 mb-6">
             L'utilisation de code promo est un véritable levier pour booster ses ventes en ligne.
           </p>
