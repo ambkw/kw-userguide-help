@@ -82,10 +82,10 @@ export function ImageGallery({ images, altPrefix }: ImageGalleryProps) {
       {/* Grille d'images */}
       <div className="w-full">
         <div className="flex flex-wrap gap-4 justify-center">
-          {images.map((image, index) => (
+            {images.map((image, index) => (
             <div
               key={index}
-              className="w-[300px] h-[300px] rounded-lg overflow-hidden cursor-pointer group shadow-lg hover:shadow-xl transition-all duration-300"
+              className="w-[270px] h-[270px] rounded-lg overflow-hidden cursor-pointer group shadow-lg hover:shadow-xl transition-all duration-300"
               onClick={() => openCarousel(index)}
             >
               <div
@@ -121,7 +121,7 @@ export function ImageGallery({ images, altPrefix }: ImageGalleryProps) {
             </Button>
 
             {/* Image actuelle */}
-            <div className="max-w-[90vw] max-h-[80vh] flex items-center justify-center">
+            <div className="max-w-[95vw] max-h-[95vh] flex items-center justify-center">
               <img
                 src={images[selectedImageIndex]}
                 alt={`${altPrefix} ${selectedImageIndex + 1}`}
@@ -135,7 +135,7 @@ export function ImageGallery({ images, altPrefix }: ImageGalleryProps) {
                 onClick={prevImage}
                 variant="outline"
                 size="icon"
-                className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+                className="bg-black/50 border-white/20 text-white"
                 disabled={images.length <= 1}
               >
                 <ChevronLeft className="h-5 w-5" />
@@ -149,7 +149,7 @@ export function ImageGallery({ images, altPrefix }: ImageGalleryProps) {
                 onClick={nextImage}
                 variant="outline"
                 size="icon"
-                className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+                className="bg-black/50 border-white/20 text-white"
                 disabled={images.length <= 1}
               >
                 <ChevronRight className="h-5 w-5" />
