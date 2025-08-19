@@ -24,20 +24,20 @@ const features = [
   
   // Communication marketing
   { title: "Plan d'actualités", url: "/guide/plan-actualites", icon: Calendar, category: "Communication marketing", keywords: ["planning", "programme", "agenda", "publications", "annonces", "calendrier", "éditorial", "rédaction", "export"] },
-  { title: "Actualités", url: "/guide/actualites", icon: FileText, category: "Communication marketing", keywords: ["news", "articles", "blog", "marketing", "publications", "annonces", "contenu", "calendrier", "éditorial", "rédaction", "export"] },
+  { title: "Actualités", url: "/guide/actualites", icon: FileText, enabled: true, category: "Communication marketing", keywords: ["news", "articles", "blog", "marketing", "publications", "annonces", "contenu", "calendrier", "éditorial", "rédaction", "export"] },
   { title: "Promotions", url: "/guide/promotions", icon: Star, category: "Communication marketing", keywords: ["offres", "réductions", "remises", "deals", "marketing", "publications", "annonces", "export"] },
   { title: "Événements", url: "/guide/evenements", icon: Calendar, category: "Communication marketing", keywords: ["events", "manifestations", "animations", "activités", "agenda", "marketing", "publications", "annonces"] },
   { title: "Paramètres d'envoi", url: "/guide/parametres-envoi", icon: Settings, category: "Communication marketing", keywords: ["email", "mailing", "expédition", "configuration", "smtp", "marketing", "mails", "groupe", "spam"] },
   { title: "Réseaux sociaux", url: "/guide/reseaux-sociaux", icon: Users, category: "Communication marketing", keywords: ["facebook", "instagram", "twitter", "linkedin", "google", "gmb", "place id", "placeid", "social media", "urls"] },
   { title: "QR Codes", url: "/guide/qr-codes", icon: FileText, category: "Communication marketing", keywords: ["qrcode", "scan", "mobile", "lien", "code", "marketing"] },
-  { title: "Clients", url: "/guide/clients", icon: Users, category: "Communication marketing", keywords: ["clientèle", "contacts", "base", "prospects", "CRM", "mails", "mailing", "données", "import", "masse", "export"] },
+  { title: "Clients", url: "/guide/clients", icon: Users, enabled: true, category: "Communication marketing", keywords: ["clientèle", "contacts", "base", "prospects", "CRM", "mails", "mailing", "données", "import", "masse", "export"] },
   { title: "Messages reçus", url: "/guide/messages-recus", icon: MessageSquare, category: "Communication marketing", keywords: ["courrier", "inbox", "réception", "contact", "formulaire"] },
   
   // Catalogue
   { title: "Commandes", url: "/guide/commandes", icon: ShoppingCart, category: "Catalogue", keywords: ["orders", "achats", "ventes", "transactions", "e-commerce", "eboutique", "boutique", "produits", "articles", "export"] },
   { title: "Paramètres des commandes", url: "/guide/parametres-commandes", icon: Settings, category: "Catalogue", keywords: ["configuration", "options", "réglages", "gestion", "workflow"] },
   { title: "Configuration des transporteurs", url: "/guide/configuration-transporteurs", icon: Truck, category: "Catalogue", keywords: ["livraison", "expédition", "transport", "colissimo", "chronopost"] },
-  { title: "Produits", url: "/guide/produits", icon: Package, category: "Catalogue", keywords: ["articles", "services", "prestations", "items", "marchandises", "inventaire", "stock", "catalogue", "export"] },
+  { title: "Produits", url: "/guide/produits", icon: Package, enabled: true, category: "Catalogue", keywords: ["articles", "services", "prestations", "items", "marchandises", "inventaire", "stock", "catalogue", "export"] },
   { title: "Catégories de produit", url: "/guide/categories-produit", icon: Database, category: "Catalogue", keywords: ["classification", "rubriques", "sections", "taxonomie", "organisation", "export"] },
   { title: "Paramètres produit", url: "/guide/parametres-produit", icon: Settings, category: "Catalogue", keywords: ["configuration", "options", "attributs", "variables", "caractéristiques"] },
   { title: "Codes promo", url: "/guide/codes-promo", icon: Star, category: "Catalogue", keywords: ["coupons", "réductions", "remises", "promotions", "discount"] },
@@ -152,6 +152,7 @@ export default function Demarrer() {
                       title={feature.title}
                       url={feature.url}
                       icon={feature.icon}
+                      enabled={feature.enabled}
                     />
                   ))}
                 </div>
