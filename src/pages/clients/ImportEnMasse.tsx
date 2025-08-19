@@ -1,6 +1,22 @@
+import { ImageGallery } from "@/components/ImageGallery";
+import { Button } from "@/components/ui/button";
+import { ArrowUp } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function ImportEnMasse() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const screenshots = [
+    "/kb/clients/import-contacts-mails/import-contacts-mails-01.png",
+    "/kb/clients/import-contacts-mails/import-contacts-mails-02.png",
+    "/kb/clients/import-contacts-mails/import-contacts-mails-03.png",
+    "/kb/clients/import-contacts-mails/import-contacts-mails-04.png",
+    "/kb/clients/import-contacts-mails/import-contacts-mails-05.png",
+    "/kb/clients/import-contacts-mails/import-contacts-mails-06.png"
+  ];
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <div className="mb-8">
@@ -197,6 +213,18 @@ export default function ImportEnMasse() {
         </section>
       </div>
 
+      {/* Carrousel des captures d'écran */}
+      <div className="mt-12">
+        <h2 className="text-2xl font-semibold text-kiween-text mb-4">
+          Guide visuel
+        </h2>
+
+        <ImageGallery 
+          images={screenshots}
+          altPrefix="Capture d'écran - Importer sa liste de contact mail"
+        />
+      </div>
+
       {/* Navigation */}
       <div className="mt-12 pt-8 border-t border-kiween-green/20">
         <div className="flex justify-between">
@@ -206,12 +234,15 @@ export default function ImportEnMasse() {
           >
             ← Retour au guide Clients
           </Link>
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-kiween-green hover:text-kiween-text transition-colors"
+          <Button
+            onClick={scrollToTop}
+            variant="outline"
+            size="sm"
+            className="text-kiween-green border-kiween-green hover:bg-kiween-green hover:text-white"
           >
-            ↑ Haut de page
-          </button>
+            <ArrowUp className="h-4 w-4 mr-2" />
+            Haut de page
+          </Button>
         </div>
       </div>
     </div>

@@ -1,7 +1,23 @@
 import { Link } from "react-router-dom";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Button } from "@/components/ui/button";
+import { ArrowUp } from "lucide-react";
+import { ImageGallery } from "@/components/ImageGallery";
 
 export default function GererSesCodes() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const screenshots = [
+    "/kb/produits/gerer-ses-codes-promo/gerer-ses-codes-promo-capture-01.png",
+    "/kb/produits/gerer-ses-codes-promo/gerer-ses-codes-promo-capture-02.png",
+    "/kb/produits/gerer-ses-codes-promo/gerer-ses-codes-promo-capture-03.png",
+    "/kb/produits/gerer-ses-codes-promo/gerer-ses-codes-promo-capture-04.png",
+    "/kb/produits/gerer-ses-codes-promo/gerer-ses-codes-promo-capture-05.png",
+    "/kb/produits/gerer-ses-codes-promo/gerer-ses-codes-promo-capture-06.png"
+  ];
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <div className="mb-8">
@@ -174,24 +190,15 @@ export default function GererSesCodes() {
           </ul>
         </section>
 
-        {/* Carrousel d'images */}
+        {/* Carrousel des captures d'écran */}
         <section>
           <h2 className="text-2xl font-semibold text-kiween-text mb-4">
-            Images du guide
+            Guide visuel
           </h2>
-          <div className="relative">
-            <div className="flex overflow-x-auto space-x-4 pb-4 scrollbar-hide">
-              {[1, 2, 3, 4, 5, 6].map((index) => (
-                <div key={index} className="flex-shrink-0">
-                  <img
-                    src={`/kb/produits/gerer-ses-codes-promo/gerer-ses-codes-promo-capture-0${index}.png`}
-                    alt={`Guide étape ${index}`}
-                    className="w-80 h-auto rounded-lg shadow-lg border border-gray-200"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
+          <ImageGallery 
+            images={screenshots}
+            altPrefix="Capture d'écran - Gérer ses codes promo"
+          />
         </section>
       </div>
 
@@ -204,12 +211,15 @@ export default function GererSesCodes() {
           >
             ← Retour au guide Produits
           </Link>
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-kiween-green hover:text-kiween-text transition-colors"
+          <Button
+            onClick={scrollToTop}
+            variant="outline"
+            size="sm"
+            className="text-kiween-green border-kiween-green hover:bg-kiween-green hover:text-white"
           >
-            ↑ Haut de page
-          </button>
+            <ArrowUp className="h-4 w-4 mr-2" />
+            Haut de page
+          </Button>
         </div>
       </div>
     </div>

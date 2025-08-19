@@ -88,7 +88,7 @@ export default function CreerFicheAbonnement() {
         </div>
       </div>
 
-      {/* Galerie d'images */}
+      {/* Carrousel des captures d'écran */}
       <div className="mt-12">
         <h3 className="text-xl font-semibold text-kiween-text mb-6">
           Guide visuel

@@ -3,6 +3,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { ArrowUp } from "lucide-react";
+import { ImageGallery } from "@/components/ImageGallery";
 
 export default function GestionStock() {
   const scrollToTop = () => {
@@ -102,23 +103,10 @@ export default function GestionStock() {
         <h3 className="text-xl font-semibold text-kiween-text mb-6">
           Guide visuel
         </h3>
-        <Carousel className="w-full max-w-4xl mx-auto">
-          <CarouselContent>
-            {screenshots.map((screenshot, index) => (
-              <CarouselItem key={index}>
-                <div className="p-2">
-                  <img
-                    src={screenshot}
-                    alt={`Capture d'écran ${index + 1} - Gestion de stock`}
-                    className="w-full h-auto rounded-lg shadow-lg"
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+        <ImageGallery 
+          images={screenshots}
+          altPrefix="Capture d'écran - Gestion de stock"
+        />
       </div>
 
       {/* Navigation */}

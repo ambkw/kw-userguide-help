@@ -1,7 +1,23 @@
 import { Link } from "react-router-dom";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { ImageGallery } from "@/components/ImageGallery";
+import { Button } from "@/components/ui/button";
+import { ArrowUp } from "lucide-react";
 
 export default function PublierUneVideo() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const screenshots = [
+    "/kb/actualites/publier-une-video/publier-une-video-01.png",
+    "/kb/actualites/publier-une-video/publier-une-video-02.png",
+    "/kb/actualites/publier-une-video/publier-une-video-03.png",
+    "/kb/actualites/publier-une-video/publier-une-video-04.png",
+    "/kb/actualites/publier-une-video/publier-une-video-05.png",
+    "/kb/actualites/publier-une-video/publier-une-video-06.png"
+  ];
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <div className="mb-8">
@@ -107,26 +123,17 @@ export default function PublierUneVideo() {
             <strong>Voir aussi :</strong> <span className="text-orange-600">démonstration pour préparer sa vidéo avant diffusion</span> 📹
           </p>
         </section>
+      </div>
 
-        {/* Carrousel d'images */}
-        <section>
-          <h2 className="text-2xl font-semibold text-kiween-text mb-4">
-            Images du guide
-          </h2>
-          <div className="relative">
-            <div className="flex overflow-x-auto space-x-4 pb-4 scrollbar-hide">
-              {[1, 2, 3, 4, 5, 6].map((index) => (
-                <div key={index} className="flex-shrink-0">
-                  <img
-                    src={`/kb/actualites/publier-une-video/publier-une-video-0${index}.png`}
-                    alt={`Guide étape ${index}`}
-                    className="w-80 h-auto rounded-lg shadow-lg border border-gray-200"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+      {/* Carrousel des captures d'écran */}
+      <div className="mt-12">
+        <h2 className="text-2xl font-semibold text-kiween-text mb-4">
+          Guide visuel
+        </h2>
+        <ImageGallery 
+          images={screenshots}
+          altPrefix="Capture d'écran - Publier une vidéo"
+        />
       </div>
 
       {/* Navigation */}
@@ -138,12 +145,15 @@ export default function PublierUneVideo() {
           >
             ← Retour au guide Actualités
           </Link>
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-kiween-green hover:text-kiween-text transition-colors"
+          <Button
+            onClick={scrollToTop}
+            variant="outline"
+            size="sm"
+            className="text-kiween-green border-kiween-green hover:bg-kiween-green hover:text-white"
           >
-            ↑ Haut de page
-          </button>
+            <ArrowUp className="h-4 w-4 mr-2" />
+            Haut de page
+          </Button>
         </div>
       </div>
     </div>

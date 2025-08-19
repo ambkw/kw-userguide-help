@@ -121,7 +121,7 @@ export function ImageGallery({ images, altPrefix }: ImageGalleryProps) {
             </Button>
 
             {/* Image actuelle */}
-            <div className="max-w-[95vw] max-h-[95vh] flex items-center justify-center">
+            <div className="w-full h-full max-w-[95vw] max-h-[95vh] flex items-center justify-center">
               <img
                 src={images[selectedImageIndex]}
                 alt={`${altPrefix} ${selectedImageIndex + 1}`}
