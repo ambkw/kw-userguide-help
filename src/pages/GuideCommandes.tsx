@@ -1,41 +1,16 @@
 import { Link } from "react-router-dom";
 
-export default function GuideProduits() {
+export default function GuideCommandes() {
   const sections = [
     {
-      id: "importer-fiches-produits",
-      title: "Importer ses fiches produits en masse",
-      url: "/guide/produits/importer-fiches-produits"
+      id: "gerer-commandes-en-ligne",
+      title: "Gérer ses commandes en ligne",
+      url: "/guide/commandes/gerer-ses-commandes"
     },
     {
-      id: "changer-affichage-catalogue",
-      title: "Changer l'affichage du catalogue produits",
-      url: "/guide/produits/changer-affichage-catalogue"
-    },
-    {
-      id: "gerer-plusieurs-prix",
-      title: "Gérer plusieurs prix sur une fiche produit",
-      url: "/guide/produits/gerer-plusieurs-prix"
-    },
-    {
-      id: "creer-fiche-abonnement",
-      title: "Créer une fiche produit de type Abonnement",
-      url: "/guide/produits/creer-fiche-abonnement"
-    },
-    {
-      id: "gerer-ses-codes-promo",
-      title: "Gérer ses codes promo",
-      url: "/guide/produits/gerer-ses-codes-promo"
-    },
-    {
-      id: "gestion-transporteurs",
-      title: "Gestion des transporteurs",
-      url: "/guide/produits/gestion-transporteurs"
-    },
-    {
-      id: "gestion-stock",
-      title: "Gestion de stock",
-      url: "/guide/produits/gestion-stock"
+      id: "impossible-passer-commande",
+      title: "Impossible de passer ma commande en ligne",
+      url: "/guide/commandes/impossible-de-passer-commande"
     }
   ];
 
@@ -43,11 +18,10 @@ export default function GuideProduits() {
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-kiween-text mb-4">
-          Guide Produits
+          Guide Commandes
         </h1>
         <p className="text-lg text-kiween-text/80">
-          Gérez efficacement votre catalogue produits avec Kiween. 
-          Commandes, prix, stock, codes promo et bien plus encore.
+          Consulter ses commandes en ligne, rechercher, mettre à jour le statut, délivrer pour encaisser, annuler ou rembourser une commande.
         </p>
       </div>
 

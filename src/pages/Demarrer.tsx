@@ -34,7 +34,7 @@ const features = [
   { title: "Messages reçus", url: "/guide/messages-recus", icon: MessageSquare, category: "Communication marketing", keywords: ["courrier", "inbox", "réception", "contact", "formulaire"] },
   
   // Catalogue
-  { title: "Commandes", url: "/guide/commandes", icon: ShoppingCart, category: "Catalogue", keywords: ["orders", "achats", "ventes", "transactions", "e-commerce", "eboutique", "boutique", "produits", "articles", "export"] },
+  { title: "Commandes", url: "/guide/commandes", icon: ShoppingCart, enabled: true, category: "Catalogue", keywords: ["orders", "achats", "ventes", "transactions", "e-commerce", "eboutique", "boutique", "produits", "articles", "export"] },
   { title: "Paramètres des commandes", url: "/guide/parametres-commandes", icon: Settings, category: "Catalogue", keywords: ["configuration", "options", "réglages", "gestion", "workflow"] },
   { title: "Configuration des transporteurs", url: "/guide/configuration-transporteurs", icon: Truck, category: "Catalogue", keywords: ["livraison", "expédition", "transport", "colissimo", "chronopost"] },
   { title: "Produits", url: "/guide/produits", icon: Package, enabled: true, category: "Catalogue", keywords: ["articles", "services", "prestations", "items", "marchandises", "inventaire", "stock", "catalogue", "export"] },
