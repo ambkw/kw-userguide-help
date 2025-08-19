@@ -3,8 +3,16 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { ImageGallery } from "@/components/ImageGallery";
 import { Button } from "@/components/ui/button";
 import { ArrowUp } from "lucide-react";
+import { useMeta } from "@/hooks/useMeta";
 
 export default function PublierUneVideo() {
+  useMeta({
+    title: 'Publier une vidéo - Guide Actualités Kiween',
+    description: 'Apprenez à diffuser une vidéo sur tous vos réseaux sociaux avec Kiween. Guide complet avec captures d\'écran et étapes détaillées.',
+    keywords: 'kiween, publier vidéo, réseaux sociaux, actualités, diffusion vidéo, Facebook, Instagram, LinkedIn',
+    image: '/kb/actualites/publier-une-video/publier-une-video-01.png'
+  });
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
