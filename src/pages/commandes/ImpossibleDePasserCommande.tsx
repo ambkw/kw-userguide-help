@@ -171,13 +171,6 @@ export default function ImpossibleDePasserCommande() {
             className="w-full rounded-lg shadow-lg"
           />
         </div>
-        <div className="mb-6">
-          <img 
-            src="/kb/commandes/impossible-de-passer-commande/impossible-de-passer-commande-faq.png" 
-            alt="FAQ - Impossible de passer ma commande en ligne"
-            className="w-full rounded-lg shadow-lg"
-          />
-        </div>
         <ImageGallery 
           images={screenshots}
           altPrefix="Capture d'écran - Impossible de passer commande"

@@ -125,13 +125,6 @@ export default function GererSesCommandes() {
         <h2 className="text-2xl font-semibold text-kiween-text mb-4">
           Guide visuel
         </h2>
-        <div className="mb-6">
-          <img 
-            src="/kb/commandes/gerer-ses-commandes/gerer-ses-commandes-guide.png" 
-            alt="Guide - Gérer ses commandes en ligne"
-            className="w-full rounded-lg shadow-lg"
-          />
-        </div>
         <ImageGallery 
           images={screenshots}
           altPrefix="Capture d'écran - Gérer ses commandes"
