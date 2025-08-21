@@ -33,22 +33,22 @@ export default function ModifierApparenceSite() {
         </nav>
 
         <h1 className="text-3xl font-bold text-kiween-text mb-4">
-          Modifier l'apparence du site
+          Modifier l'apparence du site web
         </h1>
         
         <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
           <p className="text-blue-700">
-            <strong>Personnaliser l'apparence visuelle de votre site web.</strong>
+            <strong>Choisir l'apparence du site à partir des thèmes prédéfinis.</strong>
           </p>
         </div>
 
         <h2 className="text-xl text-kiween-text/80 mb-6">
-          Comment modifier l'apparence de votre site Kiween ?
+          Comment changer le thème du site internet ?
         </h2>
 
         <Alert className="mb-6">
           <AlertDescription>
-            <strong>Menu :</strong> Espace pro &gt; <strong>Site internet</strong> &gt; <strong>Apparence</strong>
+            <strong>Menu :</strong> Espace pro &gt; Apparence
           </AlertDescription>
         </Alert>
       </div>
@@ -56,103 +56,52 @@ export default function ModifierApparenceSite() {
       <div className="space-y-8">
         <section>
           <h2 className="text-2xl font-semibold text-kiween-text mb-4">
-            Accéder aux paramètres d'apparence
+            Choix du thème
           </h2>
-          
-          <p className="text-kiween-text/90 mb-6">
-            <span className="text-kiween-green font-medium">Rendez-vous dans l'espace pro</span> puis cliquez sur "Site internet" dans le menu principal. 
-            Sélectionnez ensuite "Apparence" pour accéder à tous les <span className="text-kiween-green font-medium">paramètres de personnalisation</span> 
-            de votre site web.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-kiween-text mb-4">
-            Personnaliser les couleurs
-          </h2>
-          
-          <p className="text-kiween-text/90 mb-4">
-            Vous pouvez modifier les <strong>couleurs principales</strong> de votre site pour qu'elles correspondent à votre identité visuelle :
-          </p>
           
           <ul className="space-y-3 text-kiween-text/90 mb-6">
             <li className="flex items-start">
               <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Couleur principale :</strong> définit la couleur des boutons et éléments d'action</span>
+              <span><strong>Sélectionnez le thème</strong> en cliquant sur une des vignettes d'aperçu. Les <em>STYLE 3, 4 et 9</em> sont les plus populaires.</span>
             </li>
             <li className="flex items-start">
               <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Couleur secondaire :</strong> utilisée pour les liens et éléments de navigation</span>
+              <span><strong>Sélectionnez le modèle de couleur</strong> pour utiliser un jeu de couleur prédéfini. Ces couleurs peuvent être personnalisées plus tard.</span>
             </li>
             <li className="flex items-start">
               <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Couleur de fond :</strong> détermine l'arrière-plan général du site</span>
+              <span><strong>Sélectionnez le type de disposition</strong> pour organiser les contenus affichés automatiquement sur la page d'accueil gérée par l'application. La page d'accueil peut-être personnalisée plus tard.</span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
+              <span><strong>Valider</strong> pour enregistrer les modifications.</span>
             </li>
           </ul>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold text-kiween-text mb-4">
-            Modifier le logo et les images
+            Ajouter des images
           </h2>
-          
-          <p className="text-kiween-text/90 mb-4">
-            Personnalisez l'identité visuelle de votre site en modifiant :
-          </p>
           
           <ul className="space-y-3 text-kiween-text/90 mb-6">
             <li className="flex items-start">
               <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Logo principal :</strong> affiché dans l'en-tête du site</span>
+              <span>Ajouter une (ou plusieurs) <strong>photo panoramique</strong> pour la page d'accueil gérée automatiquement.</span>
             </li>
             <li className="flex items-start">
               <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Favicon :</strong> petite icône affichée dans l'onglet du navigateur</span>
+              <span>Ajouter un <strong>logo</strong>. Le logo est affiché automatiquement et mis en page en fonction du thème sélectionné.</span>
             </li>
             <li className="flex items-start">
               <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Image de bannière :</strong> image d'en-tête ou d'arrière-plan</span>
+              <span>Ajouter une <strong>favicon</strong>.</span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
+              <span>Choisir un <strong>album de photos</strong> pour afficher des images automatiquement sur la page d'accueil. Se référer à la gestion des photos et des albums pour en savoir plus.</span>
             </li>
           </ul>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-kiween-text mb-4">
-            Configurer les polices
-          </h2>
-          
-          <p className="text-kiween-text/90 mb-4">
-            Choisissez les <strong>polices de caractères</strong> qui s'accordent avec votre image de marque :
-          </p>
-          
-          <ul className="space-y-3 text-kiween-text/90 mb-6">
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Police des titres :</strong> utilisée pour les en-têtes et titres principaux</span>
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Police du texte :</strong> appliquée au contenu principal et aux paragraphes</span>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-kiween-text mb-4">
-            Prévisualiser les modifications
-          </h2>
-          
-          <p className="text-kiween-text/90 mb-6">
-            Avant de valider vos changements, utilisez la <strong>fonction de prévisualisation</strong> pour voir le rendu final de votre site. 
-            Cela vous permet de <span className="text-kiween-green font-medium">vérifier l'harmonie visuelle</span> et d'ajuster si nécessaire 
-            avant la mise en ligne.
-          </p>
-        </section>
-
-        <section className="bg-green-50 border border-green-200 rounded-lg p-6">
-          <p className="text-green-800">
-            <strong>Conseil :</strong> <span className="text-green-600">Conservez une cohérence visuelle avec votre identité de marque existante pour une expérience utilisateur optimale.</span>
-          </p>
         </section>
       </div>
 

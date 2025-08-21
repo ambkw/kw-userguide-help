@@ -35,22 +35,22 @@ export default function ReorganiserPages() {
         </nav>
 
         <h1 className="text-3xl font-bold text-kiween-text mb-4">
-          Réorganiser l'ordre des pages
+          Réorganiser les pages du site
         </h1>
         
         <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
           <p className="text-blue-700">
-            <strong>Structurer et organiser les pages de votre site web.</strong>
+            <strong>Modifier l'ordre des pages du menu du site internet</strong>
           </p>
         </div>
 
         <h2 className="text-xl text-kiween-text/80 mb-6">
-          Comment réorganiser l'ordre des pages de votre site ?
+          Comment changer l'ordre des liens de page du menu principal ?
         </h2>
 
         <Alert className="mb-6">
           <AlertDescription>
-            <strong>Menu :</strong> Espace pro &gt; <strong>Site internet</strong> &gt; <strong>Structure des pages</strong>
+            <strong>Menu :</strong> Espace pro &gt; Paramètres de page
           </AlertDescription>
         </Alert>
       </div>
@@ -58,108 +58,56 @@ export default function ReorganiserPages() {
       <div className="space-y-8">
         <section>
           <h2 className="text-2xl font-semibold text-kiween-text mb-4">
-            Accéder à la gestion des pages
+            Changer l'ordre des pages du menu
           </h2>
           
           <p className="text-kiween-text/90 mb-6">
-            <span className="text-kiween-green font-medium">Rendez-vous dans votre espace professionnel</span> et accédez à la section "Site internet". 
-            Cliquez sur "Structure des pages" pour visualiser et <span className="text-kiween-green font-medium">modifier l'organisation</span> 
-            de toutes les pages de votre site.
+            <strong>Afficher la vue détaillée</strong> pour accéder aux actions supplémentaires, puis utiliser la poignée dans le coin supérieur droit d'un élément pour le glisser-déposer à la position souhaitée. Enregistrer les modifications pour terminer.
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold text-kiween-text mb-4">
-            Modifier l'ordre des pages
-          </h2>
-          
-          <p className="text-kiween-text/90 mb-4">
-            Vous pouvez facilement <strong>réorganiser vos pages</strong> en utilisant le système de glisser-déposer :
-          </p>
-          
-          <ul className="space-y-3 text-kiween-text/90 mb-6">
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Glisser-déposer :</strong> cliquez et maintenez sur une page, puis faites-la glisser à la position souhaitée</span>
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Hiérarchie :</strong> créez des sous-pages en les plaçant sous une page parent</span>
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Visibilité :</strong> activez ou désactivez l'affichage de certaines pages dans le menu</span>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-kiween-text mb-4">
-            Organiser le menu principal
-          </h2>
-          
-          <p className="text-kiween-text/90 mb-4">
-            La <strong>structure de votre menu</strong> influence directement l'expérience utilisateur :
-          </p>
-          
-          <ul className="space-y-3 text-kiween-text/90 mb-6">
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Pages principales :</strong> placez les sections les plus importantes en premier</span>
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Sous-menus :</strong> regroupez les pages similaires sous des catégories logiques</span>
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Page d'accueil :</strong> définissez quelle page s'affiche en premier</span>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-kiween-text mb-4">
-            Configurer les paramètres avancés
-          </h2>
-          
-          <p className="text-kiween-text/90 mb-4">
-            Pour chaque page, vous pouvez personnaliser :
-          </p>
-          
-          <ul className="space-y-3 text-kiween-text/90 mb-6">
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Titre du menu :</strong> le texte affiché dans la navigation (peut différer du titre de la page)</span>
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>URL personnalisée :</strong> définissez une adresse web spécifique pour la page</span>
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-kiween-green rounded-full mr-3 mt-2 flex-shrink-0"></span>
-              <span><strong>Statut :</strong> publiée, brouillon ou masquée du menu</span>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-kiween-text mb-4">
-            Optimiser la navigation
+            Créer un alias ou une redirection de page
           </h2>
           
           <p className="text-kiween-text/90 mb-6">
-            Une <strong>navigation claire et intuitive</strong> améliore l'expérience utilisateur et le référencement de votre site. 
-            Organisez vos pages de manière <span className="text-kiween-green font-medium">logique et cohérente</span> en regroupant 
-            les contenus similaires et en limitant le nombre de niveaux de navigation.
+            Pour une page, cliquer sur <strong>l'icône "clé à molette"</strong> pour accéder aux paramètres avancés. L'url de la page doit être défini explicitement, puis cliquer sur <strong>alias</strong> pour ajouter la redirection. Par exemple, saisir "<em>boutique</em>" (sans les guillemets) puis valider avec la touche [<strong>Entrée</strong>] et <strong>enregistrer</strong>.
           </p>
         </section>
 
-        <section className="bg-orange-50 border border-orange-200 rounded-lg p-6">
-          <p className="text-orange-800">
-            <strong>Important :</strong> <span className="text-orange-600">Les modifications de structure peuvent affecter le référencement. 
-            Pensez à mettre en place des redirections si vous changez les URLs de pages existantes.</span>
+        <section>
+          <h2 className="text-2xl font-semibold text-kiween-text mb-4">
+            Modifier le titre et l'url
+          </h2>
+          
+          <p className="text-kiween-text/90 mb-4">
+            Pour modifier le titre d'une page affiché dans le menu principal, et son url, saisir le texte dans le champ <strong>Titre de page</strong> et <strong>Url de la page</strong>, puis enregistrer.
           </p>
+          
+          <p className="text-kiween-text/90 mb-4">
+            Il est possible, mais non recommandé, de modifier le titre et l'url des pages générées automatiquement (accueil.html, actualites.html, produits.html, ...).
+          </p>
+          
+          <p className="text-kiween-text/90 mb-4">
+            Il est recommandé de choisir des urls différentes de celles déjà utilisées par la plateforme pour les pages personnalisées créées.
+          </p>
+          
+          <p className="text-kiween-text/90 mb-6">
+            Le titre et l'url d'une page peuvent être modifiés directement depuis l'éditeur d'aperçu du site, où les META informations peuvent aussi être définies.
+          </p>
+          
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+            <p className="text-yellow-800">
+              <strong>NB :</strong> pour la valeur de l'url de la page, éviter les espaces, caractères accentués et caractères spéciaux.
+            </p>
+            <p className="text-yellow-700 mt-2">
+              - Exemples de valeur recommandée : mapage, ma-page, mapage.html, ...
+            </p>
+            <p className="text-yellow-700">
+              - Exemples de valeur à éviter : ma page, mapâge.
+            </p>
+          </div>
         </section>
       </div>
 
