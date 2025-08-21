@@ -14,7 +14,11 @@ import Demarrer from "./pages/Demarrer";
 import GuideActualites from "./pages/GuideActualites";
 import PublierUneVideo from "./pages/actualites/PublierUneVideo";
 
-import Clients from "./pages/GuideClients";
+import GuideApparence from "./pages/GuideApparence";
+import ModifierApparenceSite from "./pages/apparence/ModifierApparenceSite";
+import ReorganiserPages from "./pages/apparence/ReorganiserPages";
+
+import GuideClients from "./pages/GuideClients";
 import ImportEnMasse from "./pages/clients/ImportEnMasse";
 
 import GuideCommandes from "./pages/GuideCommandes";
@@ -53,7 +57,11 @@ const App = ({ url }: { url?: string }) => (
             <Route path="/guide/actualites" element={<GuideActualites />} />
             <Route path="/guide/actualites/publier-une-video" element={<PublierUneVideo />} />
 
-            <Route path="/guide/clients" element={<Clients />} />
+            <Route path="/guide/apparence" element={<GuideApparence />} />
+            <Route path="/guide/apparence/modifier-apparence-site" element={<ModifierApparenceSite />} />
+            <Route path="/guide/apparence/reorganiser-pages" element={<ReorganiserPages />} />
+
+            <Route path="/guide/clients" element={<GuideClients />} />
             <Route path="/guide/clients/import-en-masse" element={<ImportEnMasse />} />
 
             <Route path="/guide/commandes" element={<GuideCommandes />} />
