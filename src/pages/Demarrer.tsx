@@ -6,8 +6,8 @@ import { FileText, Settings, Eye, MessageSquare, Users, Puzzle, Gift, MapPin, Ba
 
 const features = [
   // Prévisualisation
-  { title: "Apparence", url: "/guide/apparence", icon: Eye, category: "Prévisualisation", keywords: ["site", "personnalisation", "design", "style", "thème", "couleur", "visuel", "esthétique"] },
-  { title: "Paramètres de page", url: "/guide/parametres-page", icon: Settings, category: "Prévisualisation", keywords: ["configuration", "réglages", "options", "structure", "layout", "ordre", "menu", "site"] },
+  { title: "Apparence", url: "/guide/apparence", icon: Eye, enabled: true, category: "Prévisualisation", keywords: ["site", "personnalisation", "design", "style", "thème", "couleur", "visuel", "esthétique"] },
+  { title: "Paramètres de page", url: "/guide/apparence", icon: Settings, enabled: true, category: "Prévisualisation", keywords: ["configuration", "réglages", "options", "structure", "layout", "ordre", "menu", "site"] },
   { title: "Aperçu site web", url: "/guide/apercu-site", icon: ExternalLink, category: "Prévisualisation", keywords: ["prévisualisation", "preview", "visualisation", "rendu", "test", "page", "ajouter", "design", "mise en page", "structure"] },
   { title: "Site Association", url: "/guide/site-association", icon: Building, category: "Prévisualisation", keywords: ["organisation", "association", "entreprise", "structure", "société"] },
   { title: "Page Kiween", url: "/guide/page-kiween", icon: FileText, category: "Prévisualisation", keywords: ["plateforme", "interface", "dashboard", "accueil", "portail"] },

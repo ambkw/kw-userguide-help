@@ -54,12 +54,12 @@ const App = ({ url }: { url?: string }) => (
             <Route path="/" element={<Home />} />
             <Route path="/demarrer" element={<Demarrer />} />
 
-            <Route path="/guide/actualites" element={<GuideActualites />} />
-            <Route path="/guide/actualites/publier-une-video" element={<PublierUneVideo />} />
-
             <Route path="/guide/apparence" element={<GuideApparence />} />
             <Route path="/guide/apparence/modifier-apparence-site" element={<ModifierApparenceSite />} />
             <Route path="/guide/apparence/reorganiser-pages" element={<ReorganiserPages />} />
+
+            <Route path="/guide/actualites" element={<GuideActualites />} />
+            <Route path="/guide/actualites/publier-une-video" element={<PublierUneVideo />} />
 
             <Route path="/guide/clients" element={<GuideClients />} />
             <Route path="/guide/clients/import-en-masse" element={<ImportEnMasse />} />
